@@ -1,7 +1,7 @@
 import React from "react"
-// import Demo from './components/Login'
+import Login from './components/Login'
 import Home from './components/Home'
-// import NotFound from './components/NotFound'
+import NotFound from './components/NotFound'
 import { Routes, Route } from "react-router-dom"
 
 
@@ -9,8 +9,8 @@ function App() {
   return(
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/demo" element={<Demo />} />
-        <Route path="*" element={<NotFound />} /> */}
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
   )
 }
