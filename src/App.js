@@ -1,8 +1,9 @@
 import React from "react"
-import Login from './routes/Login'
 import Home from './routes/Home'
+import Login from './routes/Login'
 import NotFound from './routes/NotFound'
-import Dashboard from './routes/Dashboard'
+// import ManageJobs from './routes/ManageJobs'
+import ManagePersonnel from './routes/ManagePersonnel'
 import { Routes, Route } from "react-router-dom"
 
 
@@ -11,7 +12,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/manage">
+          <Route path="personnel" element={<ManagePersonnel />} />
+        </Route>
+        {/* <Route path="/manage/jobs" element={<ManageJobs />} /> */}
         <Route path="*" element={<NotFound />} />
       </Routes>
   )

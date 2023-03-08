@@ -2,7 +2,11 @@ import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-    let navigate = useNavigate();
+    let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+      let path = `/manage/personnel`; 
+      navigate(path);
+    }
 
     return (
     <div>
@@ -23,7 +27,7 @@ const Login = () => {
                                     <input type="password" class="form-control" id="password" name="password" required />
                                 </div>
                                 <div class="d-grid gap-2">
-                                    <button type="submit" class="btn btn-primary" onClick={navigate('/management_dashboard')}>Log in</button>
+                                    <button class="btn btn-primary" onClick={routeChange}>Log in</button>
                                 </div>
                             </form>
                         </div>
