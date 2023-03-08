@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Fragment } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 
@@ -13,7 +13,7 @@ const NotFound = () => {
   }, [navigate]);
 
   return (
-    <div>
+    <>
       <Header />
       <div className="container my-5">
         <div className="row justify-content-center">
@@ -26,7 +26,7 @@ const NotFound = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Fragment } from "react-router-dom";
 
 const Login = () => {
     let navigate = useNavigate(); 
@@ -9,7 +9,7 @@ const Login = () => {
     }
 
     return (
-    <div>
+    <>
         <Header />
         <div class="container mt-5">
             <div class="row justify-content-center">
@@ -35,7 +35,7 @@ const Login = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </>
     );
 };
 

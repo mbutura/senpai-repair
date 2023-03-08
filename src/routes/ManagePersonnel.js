@@ -1,18 +1,15 @@
-// import React, { useEffect } from "react";
+import React, { useEffect, useState, Fragment } from "react";
 import Header from "../components/Header";
 
 const ManagePersonnel = () => {
-//   useEffect(() => {
-//     const redirectHome = setTimeout(() => {
-//       navigate(-1);
-//     }, 5000);
-//     return () => clearTimeout(redirectHome);
-//   }, [navigate]);
+  // useEffect(() => {
+
+  // }, [navigate]);
 
   return (
-    <div>
+    <>
         <Header />
-    </div>
+    </>
   );
 };
 
