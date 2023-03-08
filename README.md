@@ -1,50 +1,21 @@
-# Senpai repair back office
+# Senpai repair front end
 
 ## Description
 
-Senpai repair shop back office software.
+Senpai engineering frontend software
 
 ## Setup
 
-Install Ruby gems dependencies at local install path as vendor/bundle
+In the project directory, you can run:
 
-```
-bundle install --path vendor/bundle
-```
+```npm install```
 
-Setup migrations and seed data
+Then start the development server. Ensure you already have the backend running
 
-```
-bundle exec rake db:migrate db:seed
-```
+```npm start```
 
-If testing this with the frontend HTTP server on the same machine, Start the backend development server in the background
-
-```
-nohup bundle exec rake server QUEUE="*" --trace > rake.out 2>&1 &
-```
-
-This server should now be accessible at [http://localhost:9292](http://localhost:9292).
-## API endpoints supported
-
-### Service people
-- POST /service_people
-- GET /service_people
-- GET /service_people/:id
-- DELETE /service_people/:id
-
-### Jobs
-- POST /jobs
-- GET /jobs
-- GET /jobs/:id
-
-### Job categories
-- POST /job_categories
-- GET /job_categories/:id
-- DELETE /job_categories/:id
+To see the frontend - go to https://localhost:3000
 
 ## Associated backend code
 
-https://github.com/mbutura/senpai-repair-frontend
-
-
+https://github.com/mbutura/senpai-repair-backend
