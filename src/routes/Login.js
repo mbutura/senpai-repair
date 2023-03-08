@@ -1,7 +1,10 @@
-import Header from "./Header";
+import Header from "../components/Header";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  return (
+    let navigate = useNavigate();
+
+    return (
     <div>
         <Header />
         <div class="container mt-5">
@@ -9,7 +12,7 @@ const Login = () => {
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title text-center mb-3">Manager Login</h5>
+                            <h5 class="card-title text-center mb-3">Staff Login</h5>
                             <form>
                                 <div class="mb-3">
                                     <label for="username" class="form-label">Username</label>
@@ -20,7 +23,7 @@ const Login = () => {
                                     <input type="password" class="form-control" id="password" name="password" required />
                                 </div>
                                 <div class="d-grid gap-2">
-                                    <button type="submit" class="btn btn-primary">Log in</button>
+                                    <button type="submit" class="btn btn-primary" onClick={navigate('/management_dashboard')}>Log in</button>
                                 </div>
                             </form>
                         </div>
@@ -29,7 +32,7 @@ const Login = () => {
             </div>
         </div>
     </div>
-  );
+    );
 };
 
 export default Login;

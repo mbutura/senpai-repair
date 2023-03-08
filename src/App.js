@@ -1,7 +1,8 @@
 import React from "react"
-import Login from './components/Login'
-import Home from './components/Home'
-import NotFound from './components/NotFound'
+import Login from './routes/Login'
+import Home from './routes/Home'
+import NotFound from './routes/NotFound'
+import Dashboard from './routes/Dashboard'
 import { Routes, Route } from "react-router-dom"
 
 
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
   )
