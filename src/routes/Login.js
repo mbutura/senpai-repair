@@ -4,7 +4,7 @@ import { useNavigate, Fragment } from "react-router-dom";
 const Login = () => {
     let navigate = useNavigate(); 
     const routeChange = () =>{ 
-      let path = `/manage/personnel`; 
+      let path = `/manage`; 
       navigate(path);
     }
 
